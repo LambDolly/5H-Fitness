@@ -322,7 +322,43 @@
 }
 
 /* 响应式调整 */
+@media (max-width: 1200px) {
+    .hero-content h2 {
+        font-size: rem;
+    }
+    
+    .feature-card {
+        margin-bottom: 2rem;
+    }
+    
+    .price-card {
+        margin-bottom: 2rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .hero-content h2 {
+        font-size: 4rem;
+    }
+    
+    .hero-title {
+        font-size: 3rem;
+    }
+    
+    .feature-card i {
+        font-size: 2.5rem;
+    }
+    
+    .price {
+        font-size: 1.8rem;
+    }
+}
+
 @media (max-width: 768px) {
+    .hero-content h2 {
+        font-size: rem;
+    }
+    
     .booking-section {
         flex-direction: column;
     }
@@ -342,9 +378,78 @@
     .schedule-item,
     .coach-card {
         margin: 0.5rem 0;
+        height: auto;
+    }
+    
+    .hero-title {
+        font-size: 2.5rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.4rem;
+    }
+    
+    .hero-description {
+        font-size: 1.1rem;
+    }
+    
+    .hero-cta {
+        padding: 0.8rem 2rem;
+        font-size: 1rem;
+    }
+    
+    .features-section,
+    .membership-section {
+        padding: 2rem 0;
     }
 }
 
-html {
-    scroll-behavior: smooth;
+@media (max-width: 576px) {
+    .hero-content h2 {
+        font-size: 2rem;
+    }
+    
+    .hero-title {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.2rem;
+    }
+    
+    .hero-description {
+        font-size: 1rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .feature-card,
+    .price-card {
+        padding: 1.5rem;
+    }
+    
+    .benefits li {
+        font-size: 0.9rem;
+    }
+    
+    .btn-signup {
+        padding: 0.6rem 1.5rem;
+        font-size: 0.9rem;
+    }
+    
+    .time-slot-tag {
+        padding: 3px 8px;
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 1512px) {
+    /* MacBook Pro 14寸特定的样式 */
+    .hero-content h2 {
+        font-size: 6rem;
+    }
+    
+    .hero-title {
+        font-size: 3.5rem;
+    }
 }
