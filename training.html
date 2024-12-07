@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>训练记录 - 5H Fitness Club</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <!-- 更新后的导航栏 -->
+    <header class="navbar navbar-fixed">
+        <div class="logo">
+            <a href="index.html">
+                <h1>5H <span>Fitness Studio</span></h1>
+            </a>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="training.html">Training</a></li>
+                <li><a href="progress.html">Data Tracking</a></li>
+                <li><a href="knowledge.html">Knowledge</a></li>
+                <li><a href="profile.html">Profile</a></li>
+            </ul>
+        </nav>
+        <div class="nav-buttons">
+            <button class="btn-sign-in">Log in</button>
+            <button class="btn-register">Sign in</button>
+        </div>
+    </header>
+
+    <!-- 训练记录内容 -->
+    <main class="page-content">
+        <section class="training-section">
+            <div class="container mx-auto py-16">
+                <h2 class="section-title">Training Record</h2>
+                
+                <div class="record-form-container">
+                    <form class="record-form">
+                        <!-- 训练项目选择 -->
+                        <div class="form-group">
+                            <label>Exercise</label>
+                            <select name="exercise" class="form-select">
+                                <option value="">Select Exercise</option>
+                                <optgroup label="Chest">
+                                    <option value="卧推">Bench Press</option>
+                                    <option value="哑铃飞鸟">Dumbbell Fly</option>
+                                    <option value="器械推胸">Machine Press</option>
+                                </optgroup>
+                                <optgroup label="Back">
+                                    <option value="引体向上">Pull-up</option>
+                                    <option value="划船">Row</option>
+                                    <option value="高位下拉">High Pull</option>
+                                </optgroup>
+                                <optgroup label="Legs">
+                                    <option value="深蹲">Squat</option>
+                                    <option value="腿举">Leg Press</option>
+                                    <option value="硬拉">Deadlift</option>
+                                </optgroup>
+                                <optgroup label="Shoulders">
+                                    <option value="肩推">Shoulder Press</option>
+                                    <option value="侧平举">Lateral Raise</option>
+                                    <option value="前平举">Front Raise</option>
+                                </optgroup>
+                            </select>
+                        </div>
+
+                        <!-- 重量选择 -->
+                        <div class="form-group">
+                            <label>Weight(kg)</label>
+                            <select name="weight" class="form-select">
+                                <option value="">Select Weight</option>
+                                <option value="5">5kg</option>
+                                <option value="10">10kg</option>
+                                <option value="15">15kg</option>
+                                <option value="20">20kg</option>
+                                <option value="25">25kg</option>
+                                <option value="30">30kg</option>
+                                <option value="40">40kg</option>
+                                <option value="50">50kg</option>
+                                <option value="60">60kg</option>
+                                <option value="70">70kg</option>
+                                <option value="80">80kg</option>
+                                <option value="90">90kg</option>
+                                <option value="100">100kg</option>
+                            </select>
+                        </div>
+
+                        <!-- 组数选择 -->
+                        <div class="form-group">
+                            <label>Sets</label>
+                            <select name="sets" class="form-select">
+                                <option value="">Select Sets</option>
+                                <option value="1">1组</option>
+                                <option value="2">2组</option>
+                                <option value="3">3组</option>
+                                <option value="4">4组</option>
+                                <option value="5">5组</option>
+                                <option value="6">6组</option>
+                                <option value="8">8组</option>
+                                <option value="10">10组</option>
+                            </select>
+                        </div>
+
+                        <button type="submit" class="btn-submit">Record Training</button>
+                    </form>
+                </div>
+
+                <!-- 历史记录显示 -->
+                <div class="training-history">
+                    <h3 class="text-xl font-bold mb-4">Training History</h3>
+                    <div class="training-records">
+                        <!-- 记录将通过JavaScript动态加载 -->
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="main.js"></script>
+    <script src="training.js"></script>
+</body>
+</html> 

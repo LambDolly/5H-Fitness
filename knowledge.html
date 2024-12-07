@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>健身知识 - 5H Fitness Club</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <header class="navbar navbar-fixed">
+        <div class="logo">
+            <a href="index.html">
+                <h1>5H <span>Fitness Studio</span></h1>
+            </a>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="training.html">Training</a></li>
+                <li><a href="progress.html">Data Tracking</a></li>
+                <li><a href="knowledge.html">Knowledge</a></li>
+                <li><a href="profile.html">Profile</a></li>
+            </ul>
+        </nav>
+        <div class="nav-buttons">
+            <button class="btn-sign-in">Log in</button>
+            <button class="btn-register">Sign in</button>
+        </div>
+    </header>
+
+    <!-- 健身知识内容 -->
+    <main class="page-content">
+        <section class="knowledge-section">
+            <div class="container mx-auto py-16">
+                <h2 class="text-3xl font-bold text-center mb-12">Knowledge Base</h2>
+                
+                <!-- 知识分类 -->
+                <div class="knowledge-categories mb-8">
+                    <button class="category-btn active">All</button>
+                    <button class="category-btn">Training Tips</button>
+                    <button class="category-btn">Nutrition</button>
+                    <button class="category-btn">Recovery</button>
+                </div>
+
+                <!-- 知识文章列表 -->
+                <div class="knowledge-grid">
+                    <article class="knowledge-card">
+                        <img src="image/手机摄影 健身房 (1).jpg" alt="训练技巧">
+                        <div class="card-content">
+                            <h3>Correct Squat Pose Guide</h3>
+                            <p>Detailed explanation of the squatting action, avoiding common mistakes...</p>
+                            <a href="#" class="read-more">Read more</a>
+                        </div>
+                    </article>
+                    <!-- 更多文章卡片 -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="main.js"></script>
+</body>
+</html> 

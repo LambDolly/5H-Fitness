@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>数据追踪 - 5H Fitness Club</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <header class="navbar navbar-fixed">
+        <div class="logo">
+            <a href="index.html">
+                <h1>5H <span>Fitness Studio</span></h1>
+            </a>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="training.html">Training</a></li>
+                <li><a href="progress.html">Data Tracking</a></li>
+                <li><a href="knowledge.html">Knowledge</a></li>
+                <li><a href="profile.html">Profile</a></li>
+            </ul>
+        </nav>
+        <div class="nav-buttons">
+            <button class="btn-sign-in">登录</button>
+            <button class="btn-register">注册</button>
+        </div>
+    </header>
+
+    <!-- 数据追踪内容 -->
+    <main class="page-content">
+        <section class="progress-section">
+            <div class="container mx-auto py-16">
+                <h2 class="text-3xl font-bold text-center mb-12">数据追踪</h2>
+                
+                <!-- 数据概览卡片 -->
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+                    <div class="stat-card">
+                        <h3>本月训练次数</h3>
+                        <p class="stat-number">12</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>累计训练时长</h3>
+                        <p class="stat-number">24小时</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>完成目标进度</h3>
+                        <p class="stat-number">75%</p>
+                    </div>
+                </div>
+
+                <!-- 进度图表 -->
+                <div class="progress-charts">
+                    <div class="chart-container">
+                        <h3 class="text-xl font-bold mb-4">训练频率趋势</h3>
+                        <canvas id="frequencyChart"></canvas>
+                    </div>
+                    <div class="chart-container">
+                        <h3 class="text-xl font-bold mb-4">重量进展</h3>
+                        <canvas id="weightChart"></canvas>
+                    </div>
+                </div>
+
+                <!-- 目标设定 -->
+                <div class="goals-section mt-12">
+                    <h3 class="text-xl font-bold mb-4">目标设定</h3>
+                    <div class="goal-form">
+                        <input type="text" placeholder="设定新目标">
+                        <button class="btn-set-goal">确定</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="main.js"></script>
+    <script src="progress.js"></script>
+</body>
+</html> 

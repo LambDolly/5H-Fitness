@@ -1,0 +1,237 @@
+/* 定义自定义字体 */
+@font-face {
+    font-family: 'Audiowide';
+    src: url('front/Audiowide-Regular.ttf') format('truetype');
+}
+
+/* 基础样式 */
+body {
+    background-color: white;
+}
+
+/* 英雄区域样式 */
+.hero-section {
+    position: relative;
+}
+
+.hero-image {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+
+
+/* 遮罩层样式 */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    z-index: 10;
+}
+
+/* 导航栏样式 */
+.navbar {
+    position: relative;
+    z-index: 20;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2.5rem;
+    color: rgb(22, 22, 22);
+}
+
+
+/* 修改logo样式 */
+.logo {
+    font-weight: bold;
+    font-family: 'Audiowide', sans-serif; /* 应用新字体，并提供后备字体 */
+}
+.logo h1{
+    font-size: 54px;
+    color: #ff9029;
+}
+.logo span {
+    font-size: 54px;
+    color: #ffffff;
+    font-family: 'Audiowide', sans-serif; /* 确保span内的文字也使用相同字体 */
+}
+
+.nav-links {
+    display: flex;
+    gap: 3rem;
+    font-family: 'Audiowide', sans-serif;
+}
+
+.nav-links li {
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    letter-spacing: 0.025em;
+    cursor: pointer;
+}
+
+.nav-links li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+    display: block;
+    padding: 0.5rem 1rem;
+}
+
+.nav-links li a:hover {
+    color: #ff9029;
+}
+
+/* 导航按钮样式 */
+.nav-buttons {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.btn-language {
+    text-transform: uppercase;
+    font-size: 0.875rem;
+    border: 1px solid white;
+    border-radius: 0.5rem;
+    padding: 0.25rem 1rem;
+}
+
+.btn-language:hover {
+    background-color: #ff9029;
+    color: rgb(255, 255, 255);
+}
+
+.btn-sign-in,
+.btn-register {
+    text-transform: uppercase;
+    font-size: 0.875rem;
+    border: 1px solid #ffffff;
+    color: #ffffff;
+    border-radius: 0.5rem;
+    padding: 0.25rem 1rem;
+}
+
+.btn-sign-in:hover,
+.btn-register:hover {
+    background-color: #ff9029;
+    color: white;
+}
+
+/* 页脚样式修改 */
+.site-footer {
+    background: #1a1a1a;
+    color: #fff;
+    padding: 1rem 0 0;
+    margin-top: 1rem;
+    width: 100vw;
+    box-sizing: border-box;
+}
+
+.site-footer .container {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    margin: 0 auto 1rem;
+    padding: 0 1rem;
+}
+
+/* 响应式布局调整 */
+@media (max-width: 992px) {
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+        padding: 0 1rem;
+    }
+
+    .footer-brand,
+    .footer-hours,
+    .footer-contact {
+        width: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    .site-footer .container {
+        padding: 0 1rem;
+    }
+}
+
+/* 三个部分均匀分布 */
+.footer-brand,
+.footer-hours,
+.footer-contact {
+    flex: 1;
+    text-align: center;
+    padding: 0 1rem;
+}
+
+/* 品牌区域样式 */
+.footer-brand {
+    text-align: center;
+}
+
+.footer-brand h3 {
+    font-family: 'Audiowide', sans-serif;
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+    color: #ff9029;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.footer-brand p {
+    color: #999;
+    margin-bottom: 1.5rem;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+/* 底部版权区域修复 */
+.footer-bottom {
+    border-top: 1px solid #333;
+    padding: 1rem 0;
+    width: 100%;
+    text-align: center;
+}
+
+.footer-bottom .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.footer-bottom p {
+    color: #666;
+}
+
+.footer-bottom-links {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.footer-bottom-links a {
+    color: #666;
+    text-decoration: none;
+    transition: color 0.3s;
+}

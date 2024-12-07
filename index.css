@@ -1,0 +1,350 @@
+@font-face {
+    font-family: 'Audiowide';
+    src: url('front/Audiowide-Regular.ttf') format('truetype');
+}
+
+
+/* 英雄区域样式 */
+.hero-section {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+}
+
+.hero-image {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+.hero-content{
+    font-family: 'Audiowide', sans-serif;
+}
+.hero-content h2{
+    font-size: 7rem;
+}
+/* 遮罩层样式 */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+}
+
+/* 特色功能区域样式 */
+.features-section {
+    background: white;
+    padding: 4rem 0;
+}
+
+.feature-card {
+    text-align: center;
+    padding: 2rem;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-10px);
+}
+
+.feature-card i {
+    /* color: #ff9029; */
+    color: #4A4A4A;
+}
+.feature-card:hover i {
+    color: #ff9029; /* 悬停时变为橙色 */
+}
+
+/* 会员套餐区域样式 */
+.membership-section {
+    padding: 4rem 0;
+}
+
+.price-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    text-align: center;
+    padding: 2rem;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.price-card:hover {
+    transform: translateY(-10px);
+}
+
+.price {
+    font-size: 2rem;
+    color: #ff9029;
+    font-weight: bold;
+    margin: 1rem 0;
+}
+
+.benefits {
+    list-style: none;
+    padding: 0;
+    margin: 2rem 0;
+}
+
+.benefits li {
+    padding: 0.5rem 0;
+    color: #666;
+}
+
+.btn-signup {
+    margin-top: auto;
+    background: #ff9029;
+    color: white;
+    padding: 0.8rem 2rem;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.btn-signup:hover {
+    background: #ff7c00;
+    transform: translateY(-2px);
+}
+
+/* 首页主要内容样式 */
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+    padding: 0 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    z-index: 2;
+}
+
+.hero-title {
+    font-size: 4rem;
+    font-weight: bold;
+    color: #ff9029;
+    margin-bottom: 1.5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    animation: fadeInDown 1s ease-out;
+}
+
+.hero-subtitle {
+    font-size: 1.8rem;
+    color: white;
+    margin-bottom: 1rem;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    animation: fadeInUp 1s ease-out 0.3s;
+    animation-fill-mode: both;
+}
+
+.hero-description {
+    font-size: 1.4rem;
+    color: #f8f9fa;
+    margin-bottom: 2rem;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    animation: fadeInUp 1s ease-out 0.6s;
+    animation-fill-mode: both;
+}
+
+.hero-cta {
+    padding: 1rem 2.5rem;
+    font-size: 1.2rem;
+    background-color: #ff9029;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    animation: fadeInUp 1s ease-out 0.9s;
+    animation-fill-mode: both;
+    box-shadow: 0 4px 15px rgba(255, 144, 41, 0.3);
+}
+
+.hero-cta:hover {
+    background-color: #ff7c00;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(255, 144, 41, 0.4);
+}
+
+/* 首页特有动画 */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* 响应式调整 */
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 2.5rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.4rem;
+    }
+    
+    .hero-description {
+        font-size: 1.1rem;
+    }
+}
+
+.time-slot-tag {
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 0.875rem;
+}
+
+.time-slot-tag.available {
+    background-color: #e6f4ea;
+    color: #1e7e34;
+}
+
+.time-slot-tag.booked {
+    background-color: #f8d7da;
+    color: #dc3545;
+}
+
+.coach-card {
+    transition: transform 0.2s ease;
+}
+
+.coach-card:hover {
+    transform: translateY(-2px);
+}
+
+/* 课程预约部分样式 */
+.booking-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2rem;
+}
+
+.schedule-display,
+.coach-availability {
+    flex: 1;
+    width: 100%;
+}
+
+.schedule-item,
+.coach-card {
+    height: 150px;
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.schedule-item:hover,
+.coach-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.time {
+    color: #ff9029;
+    font-weight: bold;
+}
+
+.time-slot-tag {
+    padding: 4px 12px;
+    border-radius: 25px;
+    font-size: 0.875rem;
+    font-weight: 500;
+    transition: all 0.2s ease;
+}
+
+.time-slot-tag.available {
+    background-color: rgba(255, 144, 41, 0.1);
+    color: #ff9029;
+}
+
+.time-slot-tag.available:hover {
+    background-color: rgba(255, 144, 41, 0.2);
+}
+
+.time-slot-tag.booked {
+    background-color: #f3f4f6;
+    color: #9ca3af;
+}
+
+.coach-avatar-wrapper {
+    background: rgba(255, 144, 41, 0.1);
+    color: #ff9029;
+    transition: all 0.3s ease;
+}
+
+.coach-card:hover .coach-avatar-wrapper {
+    transform: scale(1.05);
+    background: rgba(255, 144, 41, 0.2);
+}
+
+.coach-info h4 {
+    color: #4A4A4A;
+}
+
+.coach-info p {
+    color: #666;
+}
+
+/* 响应式调整 */
+@media (max-width: 768px) {
+    .booking-section {
+        flex-direction: column;
+    }
+    
+    .schedule-filter {
+        overflow-x: auto;
+        padding-bottom: 1rem;
+        margin: 0 -1rem;
+        padding: 0 1rem;
+    }
+    
+    .time-slots {
+        flex-wrap: wrap;
+        gap: 0.5rem;
+    }
+    
+    .schedule-item,
+    .coach-card {
+        margin: 0.5rem 0;
+    }
+}
+
+html {
+    scroll-behavior: smooth;
+}

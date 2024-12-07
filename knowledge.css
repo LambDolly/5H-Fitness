@@ -1,0 +1,51 @@
+/* 健身知识页面样式 */
+.knowledge-categories {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.category-btn {
+    padding: 0.8rem 1.5rem;
+    border: 1px solid #ff9029;
+    border-radius: 25px;
+    color: #ff9029;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.category-btn.active,
+.category-btn:hover {
+    background: #ff9029;
+    color: white;
+}
+
+.knowledge-card {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.knowledge-card:hover {
+    transform: translateY(-5px);
+}
+
+.knowledge-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 1.5rem;
+}
+
+.read-more {
+    color: #ff9029;
+    text-decoration: none;
+    font-weight: 500;
+} 

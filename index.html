@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5H Fitness Club</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="common.css">
+
+</head>
+<body>
+    <section class="hero-section">
+        <img src="image/手机摄影 健身房 (2).jpg" alt="健身房环境展示" class="hero-image">
+        
+        <div class="overlay">
+            <header class="navbar">
+                <div class="logo">
+                    <a href="index.html">
+                        <h1>5H <span>Fitness Studio</span></h1>
+                    </a>
+                </div>
+                <nav>
+                    <ul class="nav-links">
+                        <li><a href="training.html">Training</a></li>
+                        <li><a href="progress.html">Data Tracking</a></li>
+                        <li><a href="knowledge.html">Knowledge</a></li>
+                        <li><a href="profile.html">Profile</a></li>
+                    </ul>
+                </nav>
+                <div class="nav-buttons">
+                    <button class="btn-sign-in">Log in</button>
+                    <button class="btn-register">Sign in</button>
+                </div>
+            </header>
+            
+            <div class="hero-content">
+                <h2 class="hero-title">Shape a Better You</h2>
+                <p class="hero-subtitle">New Member Exclusive Offer: First-time membership gets you ¥400 fitness gift pack</p>
+                <p class="hero-description">Includes 1 private coaching session + sports nutrition pack</p>
+                <a href="#membership" class="hero-cta">Start Your Fitness Journey Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 新增核心功能展示区域 -->
+    <section class="features-section" id="services">
+        <div class="container mx-auto py-16">
+            <h2 class="text-3xl font-bold text-center mb-12">Our Specialties</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="feature-card">
+                    <i class="fas fa-dumbbell text-4xl mb-4"></i>
+                    <h3 class="text-xl font-bold mb-2">Professional equipment</h3>
+                    <p>Equipped with Life Fitness, Hammer and other top international fitness equipment</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-users text-4xl mb-4"></i>
+                    <h3 class="text-xl font-bold mb-2">Group Course</h3>
+                    <p>Yoga, Boxing, Spinning and other diversified courses</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-user-graduate text-4xl mb-4"></i>
+                    <h3 class="text-xl font-bold mb-2">Professional Coach</h3>
+                    <p>Certified personal training team, one-on-one professional guidance</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 新增会员套餐区域 -->
+    <section class="membership-section bg-gray-100" id="membership">
+        <div class="container mx-auto py-16">
+            <h2 class="text-3xl font-bold text-center mb-12">Membership Program</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="price-card">
+                    <h3 class="text-xl font-bold">Monthly Pass</h3>
+                    <p class="price">$199 / Month</p>
+                    <ul class="benefits">
+                        <li>Unlimited Fitness</li>
+                        <li>Basic Group Course</li>
+                        <li>Shower facilities</li>
+                        <li>3-hour free private coaching class</li>
+                        <li>Free sports nutrition pack</li>
+                        <li>Free towel</li>
+                        <li>3 times customized healthy diet plan</li>
+                    </ul>
+                    <button class="btn-signup">Select Plan</button>
+                </div>
+
+                <div class="price-card">
+                    <h3 class="text-xl font-bold">Annual Pass</h3>
+                    <p class="price">$1999 / Year</p>
+                    <ul class="benefits">
+                        <li>Unlimited Fitness</li>
+                        <li>Intermediate & Advanced Group Course</li>
+                        <li>Shower facilities</li>
+                        <li>Monthly 6-hour free private coaching class</li>
+                        <li>Free sports nutrition pack</li>
+                        <li>Free towel</li>
+                        <li>5 times customized healthy diet plan</li>
+                    </ul>
+                    <button class="btn-signup">Select Plan</button>
+                </div>
+
+                   <div class="price-card">
+                    <h3 class="text-xl font-bold">Private Coaching</h3>
+                    <p class="price">$2999 / Year</p>
+                    <ul class="benefits">
+                        <li>Unlimited Fitness</li>
+                        <li>Unlimited Group Course</li>
+                        <li>Shower facilities & Unlimited disposable items</li>
+                        <li>Monthly 12-hour free private coaching class</li>
+                        <li>More customized private coaching service</li>
+                        <li>Free sports nutrition pack</li>
+                        <li>Free towel</li>
+                        <li>12 times customized healthy diet plan</li>
+                    </ul>
+                    <button class="btn-signup">Select Plan</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- 预约系统展示区 -->
+    <section class="booking-section bg-gray-50" id="schedule">
+        <div class="container mx-auto py-16">
+            <h2 class="text-3xl font-bold text-center mb-8">Course Booking</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="schedule-display">
+                    <h3 class="text-xl font-bold mb-4">Today's Schedule</h3>
+                    <div class="schedule-filter">
+                    </div>
+                    <div class="schedule-list">
+                        <div class="schedule-item">
+                            <div class="time">09:00 - 10:00</div>
+                            <div class="course-info">
+                                <h4>Beginner Yoga Class</h4>
+                                <p>Coach: Zhang Coach</p>
+                                <span class="status available">Available</span>
+                            </div>
+                        </div>
+                        <div class="schedule-item">
+                            <div class="time">10:30 - 11:30</div>
+                            <div class="course-info">
+                                <h4>Spinning Class</h4>
+                                <p>Coach: Li Coach</p>
+                                <span class="status full">Full</span>
+                            </div>
+                        </div>
+                        <div class="schedule-item">
+                            <div class="time">14:00 - 15:00</div>
+                            <div class="course-info">
+                                <h4>Boxing Class</h4>
+                                <p>Coach: Wang Coach</p>
+                                <span class="status available">Available</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="coach-availability">
+                    <h3 class="text-xl font-bold mb-4">Coach Appointment Status</h3>
+                    <div class="coach-list space-y-4">
+                        <div class="coach-card bg-white rounded-lg shadow-md p-4 flex items-center">
+                            <div class="coach-avatar-wrapper bg-gray-100 rounded-full p-4 mr-4">
+                                <i class="fas fa-user-circle text-3xl text-gray-600"></i>
+                            </div>
+                            <div class="coach-info flex-1">
+                                <h4 class="font-bold text-lg">Zhang Coach</h4>
+                                <p class="text-gray-600 text-sm">Yoga | Pilates</p>
+                                <div class="time-slots flex gap-2 mt-2">
+                                    <span class="time-slot-tag available">09:00</span>
+                                    <span class="time-slot-tag booked">10:30</span>
+                                    <span class="time-slot-tag available">14:00</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="coach-card bg-white rounded-lg shadow-md p-4 flex items-center">
+                            <div class="coach-avatar-wrapper bg-gray-100 rounded-full p-4 mr-4">
+                                <i class="fas fa-user-circle text-3xl text-gray-600"></i>
+                            </div>
+                            <div class="coach-info flex-1">
+                                <h4 class="font-bold text-lg">Li Coach</h4>
+                                <p class="text-gray-600 text-sm">Spinning | Strength Training</p>
+                                <div class="time-slots flex gap-2 mt-2">
+                                    <span class="time-slot-tag booked">09:00</span>
+                                    <span class="time-slot-tag available">11:00</span>
+                                    <span class="time-slot-tag available">15:00</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="coach-card bg-white rounded-lg shadow-md p-4 flex items-center">
+                            <div class="coach-avatar-wrapper bg-gray-100 rounded-full p-4 mr-4">
+                                <i class="fas fa-user-circle text-3xl text-gray-600"></i>
+                            </div>
+                            <div class="coach-info flex-1">
+                                <h4 class="font-bold text-lg">Wang Coach</h4>
+                                <p class="text-gray-600 text-sm">Boxing | Physical Training</p>
+                                <div class="time-slots flex gap-2 mt-2">
+                                    <span class="time-slot-tag available">10:00</span>
+                                    <span class="time-slot-tag available">13:00</span>
+                                    <span class="time-slot-tag booked">16:00</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-content">
+                <!-- 品牌信息 -->
+                <div class="footer-brand">
+                    <h3>5H Fitness Studio</h3>
+                    <p>Professional Gym, Your Health Partner</p>
+                    <div class="social-links">
+                        <a href="#" title="WeChat"><i class="fab fa-weixin"></i></a>
+                        <a href="#" title="Weibo"><i class="fab fa-weibo"></i></a>
+                        <a href="#" title="TikTok"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+
+                <!-- 营业时间 -->
+                <div class="footer-hours">
+                    <h4>Business Hours</h4>
+                    <ul>
+                        <li>Monday to Friday: 06:00 - 22:00</li>
+                        <li>Saturday to Sunday: 08:00 - 21:00</li>
+                        <li>Public Holidays: 09:00 - 20:00</li>
+                    </ul>
+                </div>
+    
+                <!-- 联系方式 -->
+                <div class="footer-contact">
+                    <h4>Contact Us</h4>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> Qingdao, Shandong, China</li>
+                        <li><i class="fas fa-phone"></i> 186-6955-6666</li>
+                        <li><i class="fas fa-envelope"></i> 5hfitness@163.com</li>
+                    </ul>
+                </div>
+            </div>
+    
+            <!-- 底部版权信息 -->
+            <div class="footer-bottom">
+                <p>&copy; 2024 5H Fitness Studio. All rights reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">About Us</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html></html>

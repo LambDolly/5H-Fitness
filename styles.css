@@ -1,0 +1,824 @@
+/* 定义自定义字体 */
+@font-face {
+    font-family: 'Audiowide';
+    src: url('front/Audiowide-Regular.ttf') format('truetype');
+}
+
+
+
+/* 基础样式 */
+body {
+    background-color: rgb(229 231 235);
+}
+
+/* 英雄区域样式 */
+.hero-section {
+    position: relative;
+}
+
+.hero-image {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+
+/* 遮罩层样式 */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* 导航栏样式 */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2.5rem;
+    color: white;
+}
+
+
+/* 修改logo样式 */
+.logo {
+    font-weight: bold;
+    font-family: 'Audiowide', sans-serif; /* 应用新字体，并提供后备字体 */
+}
+.logo h1{
+    font-size: 54px;
+    color: #ff9029;
+}
+.logo span {
+    font-size: 54px;
+    color: #ffffff;
+    font-family: 'Audiowide', sans-serif; /* 确保span内的文字也使用相同字体 */
+}
+
+.nav-links {
+    display: flex;
+    gap: 3rem;
+}
+
+.nav-links li {
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    letter-spacing: 0.025em;
+    cursor: pointer;
+}
+
+.nav-links li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+    color: #ff9029;
+}
+
+/* 导航按钮样式 */
+.nav-buttons {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.btn-language {
+    text-transform: uppercase;
+    font-size: 0.875rem;
+    border: 1px solid white;
+    border-radius: 0.5rem;
+    padding: 0.25rem 1rem;
+}
+
+.btn-language:hover {
+    background-color: #ff9029;
+    color: rgb(255, 255, 255);
+}
+
+.btn-sign-in {
+    text-transform: uppercase;
+    font-size: 0.875rem;
+    border: 1px solid #ffffff; /* lime-500 */
+    color: #ffffff;
+    border-radius: 0.5rem;
+    padding: 0.25rem 1rem;
+}
+
+.btn-sign-in:hover {
+    background-color: #ff9029;
+    color: white;
+}
+
+/* CTA区域样式 */
+.cta-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 0 1.5rem;
+}
+
+.cta-title {
+    font-size: 2.25rem;
+    font-weight: bold;
+    color: #ff9029;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+@media (min-width: 768px) {
+    .cta-title {
+        font-size: 3rem;
+    }
+}
+
+/* 新增功能区域样式 */
+.section-container {
+    padding: 4rem 2rem;
+    background: rgba(255, 255, 255, 0.95);
+}
+
+.section-title {
+    font-size: 2.25rem;
+    color: #ff9029;
+    text-align: center;
+    margin-bottom: 2rem;
+    font-weight: bold;
+}
+
+/* 预约系统样式 */
+.booking-section {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 4rem 0;
+}
+
+.schedule-card {
+    background: rgba(255, 255, 255, 0.98);
+    border-radius: 1rem;
+    padding: 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1.5rem;
+}
+
+/* 筛选按钮容器样式 */
+.schedule-filter {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin: 0 auto;
+    padding: 1rem 0;
+    width: 100%;
+    max-width: 600px;
+}
+
+.schedule-filter-btn {
+    background: transparent;
+    border: 1px solid #ff9029;
+    color: #ff9029;
+    padding: 0.5rem 1.5rem;
+    border-radius: 2rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    min-width: 100px;
+}
+
+.schedule-filter-btn.active {
+    background: #ff9029;
+    color: white;
+}
+
+/* 数据追踪样式 */
+.tracking-card {
+    background: rgba(255, 255, 255, 0.98);
+    border-radius: 1rem;
+    padding: 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.tracking-form input {
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 0.5rem;
+}
+
+.btn-record {
+    background: #ff9029;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    width: 100%;
+}
+
+/* 会员服务样式 */
+.member-service {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 4rem 0;
+}
+
+.service-card {
+    background: rgba(255, 255, 255, 0.98);
+    border-radius: 1rem;
+    padding: 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.member-info li {
+    padding: 1rem 0;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    justify-content: space-between;
+    color: #333;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    .logo h1, .logo span {
+        font-size: 36px;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .nav-buttons {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .section-title {
+        font-size: 1.8rem;
+    }
+}
+
+/* 动画效果 */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in {
+    animation: fadeIn 0.5s ease-out forwards;
+}
+
+/* 固定导航栏样式 */
+.navbar-fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 1000;
+}
+
+/* 页面内容通用样式 */
+.page-content {
+    padding-top: 100px; /* 为固定导航栏留出空间 */
+    min-height: 100vh;
+    background: #f8f9fa;
+}
+
+/* 训练记录页面样式 */
+.record-form-container {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 2rem;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.form-select {
+    width: 100%;
+    padding: 0.8rem;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 1rem;
+    color: #333;
+    background-color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    appearance: none;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right 1rem center;
+    background-size: 1em;
+}
+
+.form-select:focus {
+    outline: none;
+    border-color: #ff9029;
+    box-shadow: 0 0 0 3px rgba(255, 144, 41, 0.1);
+}
+
+.form-select:hover {
+    border-color: #ff9029;
+}
+
+optgroup {
+    font-weight: 600;
+    color: #666;
+}
+
+option {
+    color: #333;
+    padding: 0.5rem;
+}
+
+.btn-submit {
+    width: 100%;
+    padding: 1rem;
+    background: #ff9029;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-submit:hover {
+    background: #ff7c00;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(255, 144, 41, 0.3);
+}
+
+/* 数据追踪页面样式 */
+.stat-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.stat-number {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #ff9029;
+    margin-top: 1rem;
+}
+
+.chart-container {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+}
+
+/* 健身知识页面样式 */
+.knowledge-categories {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.category-btn {
+    padding: 0.8rem 1.5rem;
+    border: 1px solid #ff9029;
+    border-radius: 25px;
+    color: #ff9029;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.category-btn.active,
+.category-btn:hover {
+    background: #ff9029;
+    color: white;
+}
+
+.knowledge-card {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.knowledge-card:hover {
+    transform: translateY(-5px);
+}
+
+.knowledge-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 1.5rem;
+}
+
+.read-more {
+    color: #ff9029;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+/* 个人中心页面样式 */
+.profile-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.profile-header {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.membership-info {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    padding: 2rem 0;
+    border-top: 1px solid #eee;
+}
+
+.info-item {
+    text-align: center;
+}
+
+.info-item strong {
+    display: block;
+    font-size: 1.5rem;
+    color: #ff9029;
+    margin-top: 0.5rem;
+}
+
+/* 响应式调整 */
+@media (max-width: 768px) {
+    .membership-info {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .stat-card {
+        margin-bottom: 1rem;
+    }
+
+    .knowledge-categories {
+        flex-wrap: wrap;
+    }
+}
+
+/* 更新logo链接样式 */
+.logo a {
+    text-decoration: none;
+}
+
+/* 优化首页主要内容样式 */
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.hero-title {
+    font-size: 4rem;
+    font-weight: bold;
+    color: #ff9029;
+    margin-bottom: 1.5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    animation: fadeInDown 1s ease-out;
+}
+
+.hero-subtitle {
+    font-size: 1.8rem;
+    color: white;
+    margin-bottom: 1rem;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    animation: fadeInUp 1s ease-out 0.3s;
+    animation-fill-mode: both;
+}
+
+.hero-description {
+    font-size: 1.4rem;
+    color: #f8f9fa;
+    margin-bottom: 2rem;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    animation: fadeInUp 1s ease-out 0.6s;
+    animation-fill-mode: both;
+}
+
+.hero-cta {
+    padding: 1rem 2.5rem;
+    font-size: 1.2rem;
+    background-color: #ff9029;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    animation: fadeInUp 1s ease-out 0.9s;
+    animation-fill-mode: both;
+    box-shadow: 0 4px 15px rgba(255, 144, 41, 0.3);
+}
+
+.hero-cta:hover {
+    background-color: #ff7c00;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(255, 144, 41, 0.4);
+}
+
+/* 添加动画效果 */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* 响应式调整 */
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 2.5rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.4rem;
+    }
+    
+    .hero-description {
+        font-size: 1.1rem;
+    }
+}
+
+/* 程预约页面样式 */
+.schedule-section {
+    padding: 120px 0 60px;
+    background: #f8f9fa;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 2rem;
+}
+
+/* 训练历史记录样式 */
+.training-history {
+    max-width: 800px;
+    margin: 2rem auto 0;
+    padding: 2rem;
+}
+
+.history-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.records-container {
+    display: grid;
+    gap: 1rem;
+}
+
+.record-item {
+    background: white;
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.record-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid #eee;
+}
+
+.record-date {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.btn-delete {
+    background: none;
+    border: none;
+    color: #ff4444;
+    cursor: pointer;
+    padding: 0.5rem;
+    transition: color 0.3s;
+}
+
+.btn-delete:hover {
+    color: #cc0000;
+}
+
+.record-details p {
+    margin: 0.5rem 0;
+    color: #333;
+}
+
+.no-records {
+    text-align: center;
+    color: #666;
+    padding: 2rem;
+}
+
+/* 通知样式 */
+.notification {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #ff9029;
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    animation: slideIn 0.3s ease-out;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* 页脚样式修改 */
+.site-footer {
+    background: #1a1a1a;
+    color: #fff;
+    padding: 1rem 0 0;
+    margin-top: 1rem;
+    width: 100vw;
+    box-sizing: border-box;
+}
+
+.site-footer .container {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    margin: 0 auto 1rem;
+    padding: 0 1rem;
+}
+
+/* 响应式布局调整 */
+@media (max-width: 992px) {
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+        padding: 0 1rem;
+    }
+
+    .footer-brand,
+    .footer-hours,
+    .footer-contact {
+        width: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    .site-footer .container {
+        padding: 0 1rem;
+    }
+}
+
+/* 三个部分均匀分布 */
+.footer-brand,
+.footer-hours,
+.footer-contact {
+    flex: 1;
+    text-align: center;
+    padding: 0 1rem;
+}
+
+/* 品牌区域样式 */
+.footer-brand {
+    text-align: center;
+}
+
+.footer-brand h3 {
+    font-family: 'Audiowide', sans-serif;
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+    color: #ff9029;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.footer-brand p {
+    color: #999;
+    margin-bottom: 1.5rem;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+/* 底部版权区域修复 */
+.footer-bottom {
+    border-top: 1px solid #333;
+    padding: 1rem 0;
+    width: 100%;
+    text-align: center;
+}
+
+.footer-bottom .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.footer-bottom p {
+    color: #666;
+}
+
+.footer-bottom-links {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.footer-bottom-links a {
+    color: #666;
+    text-decoration: none;
+    transition: color 0.3s;
+}
